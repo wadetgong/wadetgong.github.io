@@ -1,4 +1,104 @@
 body {
-  background-color: navy;
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(254, 254, 254);
+}
+
+#prof-pic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro-info {
+  text-align: center;
+  font-size: 150%;
+  color: #050c42;
+  width: 80%;
+}
+
+.cards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.box {
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.linkedin {
+  background-color: #0077B5;
+}
+
+.github {
+  background-color: #24292e;
+}
+
+.email {
+  background-color: #db3236;
+}
+
+.resume {
+  background-color: #52c156;
+}
+
+.blog {
+  background-color: #21759b;
+}
+
+.pgrams {
+  background-color: #e4e63d;
+  font-size: 5em;
+}
+
+.box:hover i, .box:hover #pgram-icon {
+  opacity: 1;
+  transform: scale(1.1)
+}
+
+i, #pgram-icon {
   color: white;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 0px) {
+  .cards {
+    width: 320px;
+  }
+}
+@media (min-width: 656px) {
+  .cards {
+    width: 640px;
+  }
+}
+
+@media (min-width: 976px) {
+  .cards {
+    width: 960px;
+  }
 }

@@ -68,7 +68,7 @@ body {
 
 .pgrams {
   background-color: #e4e63d;
-  font-size: 5em;
+  font-size: 4.5em;
 }
 
 .box:hover i, .box:hover #pgram-icon {
@@ -101,4 +101,10 @@ a {
   .cards {
     width: 960px;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  i, #pgram-icon {
+  opacity: 1;
+}
 }

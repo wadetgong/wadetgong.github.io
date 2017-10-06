@@ -37,7 +37,7 @@ body {
 }
 
 .box {
-  margin: 10px;
+  padding: 10px;
   height: 200px;
   width: 300px;
   display: flex;
@@ -68,18 +68,25 @@ body {
 
 .pgrams {
   background-color: #e4e63d;
-  font-size: 4.5em;
+  font-size: 4em;
 }
 
-.box:hover i, .box:hover #pgram-icon {
-  opacity: 1;
-  transform: scale(1.1)
+.box:hover i {
+  transform: translateY(-0.05em);
+  transition: all 0.5s ease-in-out;
+}
+.box:hover #pgram-icon {
+  transform: translateY(-0.05em);
+  transition: all 0.5s ease-in-out;
+}
+.box:hover {
+  opacity: 0.45
 }
 
 i, #pgram-icon {
   color: white;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+  transition: transform 0.5s;
 }
 
 a {
@@ -90,10 +97,17 @@ a {
   .cards {
     width: 320px;
   }
+  .box {
+    margin: 10px 0;
+  }
 }
+
 @media (min-width: 656px) {
   .cards {
     width: 640px;
+  }
+  .box {
+    margin: 0;
   }
 }
 
@@ -103,8 +117,47 @@ a {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  i, #pgram-icon {
-  opacity: 1;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }

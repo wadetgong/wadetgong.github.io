@@ -13,6 +13,7 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2em;
 }
 
 .intro {
@@ -71,14 +72,29 @@ body {
   font-size: 4em;
 }
 
+.jobdoge {
+  background-color: #e5dbb8;
+}
+
+#jobdoge-pic {
+  width: 33%;
+}
+
 .box:hover i {
-  transform: translateY(-0.05em);
+  transform: translateY(-0.1em);
   transition: all 0.5s ease-in-out;
 }
+
 .box:hover #pgram-icon {
-  transform: translateY(-0.05em);
+  transform: translateY(-0.125em);
   transition: all 0.5s ease-in-out;
 }
+
+.box:hover #jobdoge-pic {
+  transform: translateY(-0.5em);
+  transition: all 0.5s ease-in-out;
+}
+
 .box:hover {
   opacity: 0.45
 }
